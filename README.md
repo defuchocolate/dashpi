@@ -48,11 +48,11 @@ ToDo
 - [x] Highlight the POIs
 - [x] Introduce AOIs 
 - [ ] Argument support
-- [ ] Project initialisation
+- [ ] Project initialization
 - [ ] Boundary check
 - [ ] Write the threshold algorithm as a class
 - [ ] Improve AOI highlight algorithm
 - [ ] Change exit button
 - [ ] Improve debugging information
 
-Don't forget to checkout my blog: [lyinch.com](http://www.lyinch.com/"Lyinch's World").
+Don't forget to checkout my [blog](http://www.lyinch.com/ "Lyinch's World").
