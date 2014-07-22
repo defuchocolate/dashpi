@@ -1,0 +1,11 @@
+#!/bin/bash
+# openCV CPP Compile Script with linked openCV libraries and flags; clears logfile
+# $1 -> sourcecode file $2 -> outputfilename
+start=$(date +%s)
+g++  src/$1.cpp lib/lib_log.cpp  -o ./build/$2 `pkg-config opencv --libs pkg-config opencv --cflags`
+#sudo rm -f $2.log
+#sudo touch $2.log
+stop=$(date +%s)
+elapsed=$(($stop-$start))
+echo "Compiled in: $(($elapsed/60))min and $(($elapsed%60))s."
+exit 0

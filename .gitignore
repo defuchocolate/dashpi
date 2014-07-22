@@ -1,0 +1,6 @@
+src/depre_*
+test/
+/build/*
+clear
+*~
+*.log
