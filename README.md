@@ -5,10 +5,26 @@ A Raspberry Pi connected to a GoPro analyzing traffic signs with openCV in C++. 
 
 Project Files
 ----------
-Only use the main.cpp and the files provided in /lib/. Every other c++ file is deprecated.
+Only use the main.cpp and the files provided in /lib/. Every other c++ file is deprecated. Examples images can be found in /input/
+
+Arguments
+----------
+-d 					: debugging mode
+-i <image>			: image path
 
 Changelog
 ----------
+
+#### Dashpi v0.0.2
+
+* Initialization added
+* Boundary check added
+* Reduced unnecessary array invocations in the AOI algorithm
+* Changed button to close the application- ESC or 'c' now ends the program
+* Argument support
+* Debugging mod triggered with argument
+* Image path read in with argument
+* Image resolution is checked
 
 #### Dashpi v0.0.1
 
@@ -47,12 +63,15 @@ ToDo
 - [x] Include images as arguments
 - [x] Highlight the POIs
 - [x] Introduce AOIs 
-- [ ] Argument support
-- [ ] Project initialization
-- [ ] Boundary check
+- [x] Change exit button
+- [x] Project initialization
+- [x] Boundary check
+- [x] Argument support
+- [x] Reduce unnecessary array requests
 - [ ] Write the threshold algorithm as a class
-- [ ] Improve AOI highlight algorithm
-- [ ] Change exit button
 - [ ] Improve debugging information
+- [ ] Check if application crashed
+- [ ] Better window sizes and positions
+- [ ] Draw box around the signs
 
 Don't forget to checkout my [blog](http://www.lyinch.com/ "Lyinch's World").

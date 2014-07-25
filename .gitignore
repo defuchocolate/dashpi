@@ -1,6 +1,7 @@
 src/depre_*
-test/
+deprecated/
 /build/*
 clear
 *~
 *.log
+/output/*
