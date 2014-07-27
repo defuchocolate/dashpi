@@ -1,0 +1,8 @@
+#!/bin/bash
+# Connects to the GoPro's Wifi
+sudo netctl stop-all
+sudo netctl start eth0
+sudo netctl start wlan0-ThierrysGoPro
+sudo ping -c 3 www.google.com
+echo "If no error occured, the connection has been established!"
+exit 0
